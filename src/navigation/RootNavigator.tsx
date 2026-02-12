@@ -1,10 +1,11 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { AuthStack } from "./AuthStack";
 
 export function RootNavigator() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>RootNavigator works</Text>
-    </View>
+    <NavigationContainer>
+      <AuthStack />
+    </NavigationContainer>
   );
 }
